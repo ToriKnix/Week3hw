@@ -1,4 +1,4 @@
-// Define the generate button element
+
 var generateBtn = document.querySelector("#generate");
 
 
@@ -12,12 +12,11 @@ function generatePassword(length) {
   return password;
 }
 
-// I have defined the function that writes the random password
 function writePassword() {
   var passwordText = document.querySelector("#password");
-  var password = generatePassword(12); //I have set the length to 8 characters
+  var password = generatePassword(12); 
   passwordText.value = password;
 }
 
-// Add an event listener to the generate button
+
 generateBtn.addEventListener("click", writePassword);
